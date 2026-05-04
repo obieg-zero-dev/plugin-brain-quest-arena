@@ -13,7 +13,7 @@ const plugin: PluginFactory = ({ React, ui, store, sdk, icons }) => {
   const WIN_THRESHOLD = 3
   const LEVEL_POINTS = [2, 1] // pełne pytanie, łatwiejsza parafraza
 
-  type LexMaps = { nidMap: Map<string, string[]>; formMap: Map<string, string[]>; quizMap: Map<string, PostRecord> }
+  type LexMaps = { nidMap: Map<string, string[]>; quizMap: Map<string, PostRecord> }
   type BqHelpers = {
     discover: (id: string) => void
     unlockNode: (postId: string) => void
